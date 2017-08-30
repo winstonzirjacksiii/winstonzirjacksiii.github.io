@@ -1,0 +1,27 @@
+{
+  "template": "index.jade",
+  "title": "Winston Zirjacks III - Web Developer",
+  "page-header": "Oh hey,<br/> it's Winston",
+  "page-subheader": "web developer and general enthusiast.",
+  "what-im-about": [
+    "I'm a front-end web developer with a penchant for developing clean and usable interfaces. Working with scalable and mantainable stylesheets, building semantic and cross-browser compatable HTML and CSS, and pappering content with UX that helps tells stories instead of holding hands.",
+    "My previous experiance is veried. The first allegorical sugar packet steadying the legs of my current skillset is from a start-up where we designed and built a web-based point-of-sale system. The second packet was spent at an agency where we built web-apps for tech-industry events. The final and third packet is currently being filled at an agency where aid local businesses by designing and implementing sites for popular e-commerce systems and custom CMSs.",
+    "We all know how difficult it is to write about yourself. So instead of going free-form, we're gonna' keep it a bit structured:"
+  ],
+  "professional-interests": ["Stuff", "Things"],
+  "personal-interests": ["Cats", "Bikes"],
+  "quotes": {
+    "boss": [
+      "Reed is a skilled, knowledgeable team player. Overall he has a positive attitude and has aptly tackled everything we've thrown at him over the years, both frontend and backend. I would definitely recommend him.",
+      "Jon Cattivera -  CEO @ Sleepless Media"
+    ]
+  },
+  "connect": [
+    "phone: (916) 628-0087",
+    "email: <a href='mailto:winston.zirjacks.iii@gmail.com'>winston.zirjacks.iii@gmail.com</a>"
+  ],
+  "social-media": {
+    "LinkedIn": "https://www.linkedin.com/in/winston-zirjacks-2071a918/",
+    "Github": "https://github.com/winstonzirjacksiii"
+  }
+}

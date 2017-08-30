@@ -1,0 +1,13 @@
+{
+  "url": "http://localhost:8080",
+  "baseUrl": "/",
+  "output":"./build",
+  "locals": "./contents/index.json",
+  "jade": {
+    "pretty": true
+  },
+  "markdown": {
+    "smartLists": true,
+    "smartypants": true
+  }
+}

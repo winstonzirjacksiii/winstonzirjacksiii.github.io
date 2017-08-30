@@ -1,0 +1,34 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title= locals.title
+    link(href='/css/style.css', rel='stylesheet')
+  body.l-container
+    header
+      h1.m-header!= locals["page-header"]
+      h2.m-header_sub!=locals["page-subheader"]
+    .m-main  
+      section
+        h1.m-subheader What I'm About
+        for paragraph in locals["what-im-about"]
+          p!= paragraph
+      section
+        h1.m-subheader Professional Interests
+        ul
+          for paragraph in locals["professional-interests"]
+            li!= paragraph
+      section
+        h1.m-subheader Personal Interests
+        ul
+          for paragraph in locals["personal-interests"]
+            li!= paragraph
+      section
+        h1.m-header_sub Connect:
+        for item in locals["connect"]
+          div!= item
+      section
+        h1.m-subheader Social Media
+        each val, item in locals["social-media"]
+          div
+            a(href=val target="_blank")!= item
