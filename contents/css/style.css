@@ -51,6 +51,7 @@ table {
 /* --- Base Styles --- */
 html,
 body {
+  background-color:#fafafa;
   -webkit-font-smoothing: antialiased;
   font-family: -apple-system, "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Lucida Grande", "Arial", sans-serif;
   line-height: 1.4;
@@ -58,8 +59,11 @@ body {
 }
 
 a {color:#333333;}
-p+p {margin-top:1em;}
+p+p, p+img, img+p {margin-top:1em;}
 section+section {margin-top:2.25em;}
+img {max-width:100%;}
+
+h1,h2,h3,h4,h5 {font-weight:bold;text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.85);}
 
 
 /* --- Layout Styles --- */
@@ -76,11 +80,19 @@ section+section {margin-top:2.25em;}
   display:block;
   position:relative;
   font-weight:bold;font-size:6em;
+  line-height:1;
+  margin-top:0.3em;
 }
 
 .m-header_sub {font-weight:bold;font-style:italic;font-size:2em;margin-bottom:2rem;}
 
 .m-subheader {font-size:1.2em;font-weight:bold;margin-bottom:1em;}
+
+.m-proj {padding-bottom:1em;padding-top:0.25em;}
+.m-proj_link {display:inline-block;margin-bottom:0.5em;}
+.m-proj_tech {font-style:italic;}
+.m-proj_tech:before {display:inline-block;content:"Technology Used:";margin-right:10px;}
+
 
 /* --- Effects --- */
 a, i {

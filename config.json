@@ -5,9 +5,5 @@
   "locals": "./contents/index.json",
   "jade": {
     "pretty": true
-  },
-  "markdown": {
-    "smartLists": true,
-    "smartypants": true
   }
 }

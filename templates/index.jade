@@ -1,3 +1,15 @@
+mixin project(pName, url, tech, desc, imgUrl)
+  article
+    details
+      summary= pName
+      .m-proj
+        a(href=url target="_blank").m-proj_link View Project
+        p
+          h3.m-proj_tech= tech
+        if imgUrl
+          img(src="/img/#{imgUrl}" alt=pName)
+        p!= desc
+
 doctype html
 html(lang='en')
   head
@@ -23,6 +35,20 @@ html(lang='en')
         ul
           for paragraph in locals["personal-interests"]
             li!= paragraph
+      section
+        h1.m-header_sub Projects:
+        section
+          h1.m-proj_header Professional:
+          ul
+            for currProject in locals["sleepless-projects"]
+              li
+                +project(currProject["name"],currProject["url"],currProject["tech"],currProject["desc"],currProject["pic"])
+        section
+          h1.m-proj_header Personal:
+          ul
+            for currProject in locals["personal-projects"]
+              li
+                +project(currProject["name"],currProject["url"],currProject["tech"],currProject["desc"],null)
       section
         h1.m-header_sub Connect:
         for item in locals["connect"]
