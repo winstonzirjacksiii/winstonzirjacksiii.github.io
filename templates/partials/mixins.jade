@@ -1,0 +1,11 @@
+mixin project(pName, url, tech, desc, imgUrl)
+  article
+    details
+      summary= pName
+      .m-proj
+        a(href=url target="_blank").m-proj_link View Project
+        p
+          span.m-proj_tech= tech
+        if imgUrl
+          img(src="/img/#{imgUrl}" alt=pName)
+        p!= desc
