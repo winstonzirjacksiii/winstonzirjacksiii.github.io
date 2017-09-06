@@ -5,39 +5,50 @@ head
   meta(charset='utf-8')
   title= locals.title
   link(href='/css/style.css', rel='stylesheet')
+  link(href='/css/fancy.css', rel='stylesheet')
 body.l-container
   header
-    h1.m-header.meow!= locals["page-header"] + "!!!"
-    h2.m-header_sub!=locals["page-subheader"]
-  .m-main  
+    .m-section_fullpage.l-container.l-flex_vert--center
+      - var letters = locals["page-header"].split('<br/>').map(function(line){return line.split("")});
+      - var counter = 0;
+      h1.m-header
+        for line in letters
+          for letter in line
+            if letter !== ' '
+              span(class="e-letter e-letter_#{counter}")= letter
+              - counter++;
+            else
+              span= letter
+          br
+      h2(class="m-header_sub e-letter e-letter_#{counter}")!=locals["page-subheader"]
+  section.m-section_content
+    h1.m-subheader What I'm About
+    for paragraph in locals["what-im-about"]
+      p!= paragraph
+  section.m-section_content
+    h1.m-subheader Professional Interests
+    ul
+      for paragraph in locals["professional-interests"]
+        li!= paragraph
+  section.m-section_content
+    h1.m-subheader Personal Interests
+    ul
+      for paragraph in locals["personal-interests"]
+        li!= paragraph
+  section.m-section_content
+    h1.m-header_sub Projects:
     section
-      h1.m-subheader What I'm About
-      for paragraph in locals["what-im-about"]
-        p!= paragraph
-    section
-      h1.m-subheader Professional Interests
+      h1.m-proj_header Professional:
       ul
-        for paragraph in locals["professional-interests"]
-          li!= paragraph
+        for currProject in locals["sleepless-projects"]
+          li
+            +project(currProject["name"],currProject["url"],currProject["tech"],currProject["desc"],currProject["pic"])
     section
-      h1.m-subheader Personal Interests
+      h1.m-proj_header Personal:
       ul
-        for paragraph in locals["personal-interests"]
-          li!= paragraph
-    section
-      h1.m-header_sub Projects:
-      section
-        h1.m-proj_header Professional:
-        ul
-          for currProject in locals["sleepless-projects"]
-            li
-              +project(currProject["name"],currProject["url"],currProject["tech"],currProject["desc"],currProject["pic"])
-      section
-        h1.m-proj_header Personal:
-        ul
-          for currProject in locals["personal-projects"]
-            li
-              +project(currProject["name"],currProject["url"],currProject["tech"],currProject["desc"],null)
+        for currProject in locals["personal-projects"]
+          li
+            +project(currProject["name"],currProject["url"],currProject["tech"],currProject["desc"],null)
     section
       h1.m-header_sub Connect:
       for item in locals["connect"]
