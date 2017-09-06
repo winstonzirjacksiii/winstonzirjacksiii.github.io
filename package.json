@@ -1,0 +1,28 @@
+{
+  "name": "wz-portfolio_simple",
+  "version": "1.0.0",
+  "description": "Simple Portfolio built with Wintersmith to share content between multiple templates.",
+  "main": "index.js",
+  "scripts": {
+    "preview": "wintersmith preview",
+    "build": "wintersmith build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/winstonzirjacksiii/wz-portfolio_simple.git"
+  },
+  "keywords": [
+    "Portfolio",
+    "Wintersmith",
+    "HTML5/CSS3"
+  ],
+  "author": "Winston Zirjacks",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/winstonzirjacksiii/wz-portfolio_simple/issues"
+  },
+  "homepage": "https://github.com/winstonzirjacksiii/wz-portfolio_simple#readme",
+  "dependencies": {
+    "wintersmith": "^2.4.1"
+  }
+}
