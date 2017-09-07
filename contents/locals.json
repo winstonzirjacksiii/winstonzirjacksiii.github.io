@@ -17,8 +17,12 @@
     ]
   },
   "simple-note": [
-    "I designed and built this website with simplicity in mind. It's readable, clean, and anyone can navigate its content intuitively. Any modern browser will be able to load this page predictably and consistently. It's already responsive and the page-weight is incredibly low.",
-    "This design took inspiration from <a href='http://motherfuckingwebsite.com/' target='_blank'>http://motherfuckingwebsite.com/</a> website, while adding in some low-cost reset and animation CSS. It's still lightweight, but you can always check the link at the top of the page to see a more standard portfolio design."
+    "I designed and built this website with simplicity in mind. It's readable, clean, and anyone can navigate its content intuitively. Most browsers will be able to load this page predictably and consistently. It's already responsive and the page-weight is incredibly low.",
+    "This design took inspiration from <a href='http://motherfuckingwebsite.com/' target='_blank'>http://motherfuckingwebsite.com/</a> website, while adding in some low-cost reset and animation CSS. It's still lightweight, but you can always check the link at the top of the page to see a more slightly more fancy portfolio design."
+  ],
+  "fancy-note": [
+    "This is more of an iteration over the original simple portfolio with some added responsive grid systeming, colors, images, and even more animations.",
+    "The goal is to show off my work with some subtle CSS and JS. Please note: I am not a designer. Giving feedback on designs is something that comes very easily to me, but starting from scratch is still difficult without collaboration."
   ],
   "connect": [
     "phone: (916) 628-0087",

@@ -6,8 +6,8 @@ head
   title= locals.title
   link(href='/css/style.css', rel='stylesheet')
   link(href='/css/fancy.css', rel='stylesheet')
-body.l-container
-  header
+body.l-text_center
+  header.l-bg_green
     .m-section_fullpage.l-container.l-flex_vert--center
       - var letters = locals["page-header"].split('<br/>').map(function(line){return line.split("")});
       - var counter = 0;
@@ -21,40 +21,49 @@ body.l-container
               span= letter
           br
       h2(class="m-header_sub e-letter e-letter_#{counter}")!=locals["page-subheader"]
-  section.m-section_content
-    h1.m-subheader What I'm About
-    for paragraph in locals["what-im-about"]
-      p!= paragraph
-  section.m-section_content
-    h1.m-subheader Professional Interests
-    ul
-      for paragraph in locals["professional-interests"]
-        li!= paragraph
-  section.m-section_content
-    h1.m-subheader Personal Interests
-    ul
-      for paragraph in locals["personal-interests"]
-        li!= paragraph
-  section.m-section_content
-    h1.m-header_sub Projects:
-    section
-      h1.m-proj_header Professional:
-      ul
-        for currProject in locals["sleepless-projects"]
-          li
-            +project(currProject["name"],currProject["url"],currProject["tech"],currProject["desc"],currProject["pic"])
-    section
-      h1.m-proj_header Personal:
-      ul
-        for currProject in locals["personal-projects"]
-          li
-            +project(currProject["name"],currProject["url"],currProject["tech"],currProject["desc"],null)
-    section
-      h1.m-header_sub Connect:
-      for item in locals["connect"]
-        div!= item
-    section
-      h1.m-subheader Social Media
-      each val, item in locals["social-media"]
-        div
-          a(href=val target="_blank")!= item
+  section.m-section_content.l-bg_tan--light
+    .l-container
+      h1.m-subheader What I'm About
+      for paragraph in locals["what-im-about"]
+        p!= paragraph
+  section.m-section_content.l-bg_brown
+    .l-container
+      .l-row
+        .l-col.two
+          h1.m-subheader Professional Interests
+          ul
+            for paragraph in locals["professional-interests"]
+              li!= paragraph
+        .l-col.two
+          h1.m-subheader Personal Interests
+          ul
+            for paragraph in locals["personal-interests"]
+              li!= paragraph
+
+
+  section.m-section_content.l-bg_tan
+    .l-container
+      h1.m-header_sub Projects:
+      section
+        h1.m-proj_header Professional:
+        ul
+          for currProject in locals["sleepless-projects"]
+            li
+              +project(currProject["name"],currProject["url"],currProject["tech"],currProject["desc"],currProject["pic"])
+      section
+        h1.m-proj_header Personal:
+        ul
+          for currProject in locals["personal-projects"]
+            li
+              +project(currProject["name"],currProject["url"],currProject["tech"],currProject["desc"],null)
+  section.m-section_content.l-bg_brown
+    .l-container
+      section.m-subsection
+        h1.m-header_sub Connect:
+        for item in locals["connect"]
+          div!= item
+      section.m-subsection
+        h1.m-subheader Social Media
+        each val, item in locals["social-media"]
+          div
+            a(href=val target="_blank")!= item

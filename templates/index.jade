@@ -47,3 +47,9 @@ body.l-container
       each val, item in locals["social-media"]
         div
           a(href=val target="_blank")!= item
+    footer.m-footer_padding
+      .l-font_italic.l-font_small
+        each paragraph in locals["simple-note"]
+          p!= paragraph
+      .m-footer
+        span &copy;2017 Winston Zirjacks

@@ -49,6 +49,7 @@ table {
 
 
 /* --- Base Styles --- */
+* {box-sizing:border-box;}
 html,
 body {
   background-color:#fafafa;
@@ -72,6 +73,8 @@ h1,h2,h3,h4,h5 {font-weight:bold;text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.
   width:90%;
   max-width: 860px;
 }
+.l-font_italic {font-style:italic;}
+.l-font_small {font-size:0.9em;}
 
 /* --- Modules --- */
 .m-main {margin:2rem 0;}
@@ -92,6 +95,9 @@ h1,h2,h3,h4,h5 {font-weight:bold;text-shadow: 1px 1px 2px rgba(150, 150, 150, 0.
 .m-proj_link {display:inline-block;margin-bottom:0.5em;}
 .m-proj_tech {font-style:italic;}
 .m-proj_tech:before {display:inline-block;content:"Technology Used:";margin-right:10px;}
+
+.m-footer_padding {padding-top:2em;padding-bottom:2em;}
+.m-footer {margin-top:2em;font-weight:bold;}
 
 
 /* --- Effects --- */
