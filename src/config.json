@@ -1,7 +1,7 @@
 {
   "url": "http://localhost:8080",
   "baseUrl": "/",
-  "output":"./build",
+  "output":"../",
   "locals": "./contents/locals.json",
   "jade": {
     "pretty": true
