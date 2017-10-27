@@ -30,9 +30,17 @@
   ],
   "social-media": {
     "LinkedIn": "https://www.linkedin.com/in/winston-zirjacks-2071a918/",
-    "Github": "https://github.com/winstonzirjacksiii"
+    "Github": "https://github.com/winstonzirjacksiii",
+    "Codepen": "https://codepen.io/winstonzirjacksiii/"
   },
   "sleepless-projects": [
+    {
+      "name": "Socksmith",
+      "url": "http://www.socksmith.com/",
+      "tech": "Shopify, Python, CSS3, Javascript+jQuery, Git, NPM, shopify-slate, SMACCS, Liquid",
+      "pic": "socksmith-laptop-phone.jpg",
+      "desc": "This is a recent project in which I was tasked with both migrating to Shopify from Magento alongside building out a custom theme for the project as well. I took a database dump from a Magento installation and with Python and a handfull of libraries converted it into a CSV spreadsheet while transposing and importing information to reflect the changes in environment. On top of that, the theme featured the usual Sleepless Media design and flair, along with a custom-built filter system for the collection view built exclusively with the Liquid templating language."
+    },
     {
       "name": "Harris Ranch",
       "url": "http://www.harrisranch.com/home/",
@@ -49,6 +57,12 @@
     }
   ],
   "personal-projects": [
+    {
+      "name": "Github Lookup with React, Redux, and Thunk",
+      "url": "https://github.com/winstonzirjacksiii/github-lookup-redux-thunk",
+      "tech": "React, Redux, Thunk, React Router, ES6, NPM, Javascript, HTML5",
+      "desc": "My first jab at feeling out both Redux and Thunk in the React framework. Also used react-router to create a simple single-user view after building a list of look-upped profiles."
+    },
     {
       "name": "Open Weather Maps React Demo",
       "url": "https://github.com/winstonzirjacksiii/owm-react-demo",
