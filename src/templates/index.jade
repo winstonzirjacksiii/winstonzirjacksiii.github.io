@@ -1,10 +1,6 @@
 include ./partials/mixins
 include ./partials/header
 
-head
-  meta(charset='utf-8')
-  title= locals.title
-  link(href='/css/style.css', rel='stylesheet')
 body.l-container
   header
     - var letters = locals["page-header"].split('<br/>').map(function(line){return line.split("")});
