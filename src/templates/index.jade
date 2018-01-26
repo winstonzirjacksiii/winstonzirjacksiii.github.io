@@ -7,8 +7,18 @@ head
   link(href='/css/style.css', rel='stylesheet')
 body.l-container
   header
-    h1.m-header!= locals["page-header"]
-    h2.m-header_sub!=locals["page-subheader"]
+    - var letters = locals["page-header"].split('<br/>').map(function(line){return line.split("")});
+    - var counter = 0;
+    h1.m-header
+      for line in letters
+        for letter in line
+          if letter !== ' '
+            span(class="e-letter e-letter_#{counter}")= letter
+            - counter++;
+          else
+            span= letter
+        br
+    h2(class="m-header_sub e-letter e-letter_#{counter}")!=locals["page-subheader"]
   .m-main  
     section
       h1.m-subheader What I'm About

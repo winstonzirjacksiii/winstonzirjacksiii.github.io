@@ -9,7 +9,7 @@
     "Let's be honest here: I just want to use my skills to help people do stuff better. Let me use my skills to help empower your vision, project, or technical whimsey."
   ],
   "professional-interests": ["Javascript", "HTML5/CSS3", "React.js", "Scalable CSS", "Build Tools", "ES6/ES7", "Functional Programming", "Solving Problems", "Identifying Patterns and Solutions", "Professional Improvement"],
-  "personal-interests": [ "Rock Climbing", "Bicycle Touring", "BMX", "Mountain Biking", "Cats (mine, specifically)", "Loud Music", "Camping", "Peronsal Improvement"],
+  "personal-interests": [ "Rock Climbing", "Bicycle Touring", "BMX", "Mountain Biking", "Cats (mine, specifically)", "Loud Music", "Camping", "Personal Development"],
   "quotes": {
     "boss": [
       "Reed is a skilled, knowledgeable team player. Overall he has a positive attitude and has aptly tackled everything we've thrown at him over the years, both frontend and backend. I would definitely recommend him.",
@@ -35,10 +35,17 @@
   },
   "sleepless-projects": [
     {
+      "name": "bkr",
+      "url": "https://www.mybkr.com/",
+      "tech": "Shopify, Node.js, Python, CSS3, Javascript+jQuery, Git, NPM, shopify-slate, SMACCS, Liquid",
+      "pic": "bkr-landing.jpg",
+      "desc": "The plan for this project quickly went from /just/ making small adjustments to a pre-selected theme into a full-scale data migration between their old custom-built system and a Shopify installation. Python and a purpose-built javascript bookmarklet were used for the initial bits of migration, but as the scale changed we built out a custom Node.js script for pulling directly from their MySQL database, joining, and transforming data across multiple tables in order to import a truckload of content into their new environment. Rate limiting was added in conjunction with Shopify's API limitations in order to create a more automated and hands-free migration. Custom UX was written with vanilla javascript, and we reused as much of the existing templating and styling as possible while adding and expanding the existing theme."
+    },
+    {
       "name": "Socksmith",
       "url": "http://www.socksmith.com/",
       "tech": "Shopify, Python, CSS3, Javascript+jQuery, Git, NPM, shopify-slate, SMACCS, Liquid",
-      "pic": "socksmith-laptop-phone.jpg",
+      "pic": "sockingsmith-laptop-phone.jpg",
       "desc": "This is a recent project in which I was tasked with both migrating to Shopify from Magento alongside building out a custom theme for the project as well. I took a database dump from a Magento installation and with Python and a handfull of libraries converted it into a CSV spreadsheet while transposing and importing information to reflect the changes in environment. On top of that, the theme featured the usual Sleepless Media design and flair, along with a custom-built filter system for the collection view built exclusively with the Liquid templating language."
     },
     {
