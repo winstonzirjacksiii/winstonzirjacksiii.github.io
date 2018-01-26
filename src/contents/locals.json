@@ -65,6 +65,13 @@
   ],
   "personal-projects": [
     {
+      "name": "Twitter Lookup and Storage with Node, Express, React, and Firebase",
+      "url": "https://github.com/winstonzirjacksiii/node-react-twitter-fetch",
+      "tech": "Node, Express, React, ES6, NPM, Javascript, HTML5",
+      "desc": "Just a quick React implementation of the twitter API's tweet querying capibilities, coupled with an Express/Node server for making said calls and rate limiting. The project itself is live at <a href='https://twitter-lookup.firebaseapp.com/' target='blank'>https://twitter-lookup.firebaseapp.com/</a>."
+
+    },
+    {
       "name": "Github Lookup with React, Redux, and Thunk",
       "url": "https://github.com/winstonzirjacksiii/github-lookup-redux-thunk",
       "tech": "React, Redux, Thunk, React Router, ES6, NPM, Javascript, HTML5",
